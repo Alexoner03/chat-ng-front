@@ -1,1 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
+.main {
+  @apply w-screen h-screen overflow-hidden bg-gradient-to-b from-indigo-500 to-purple-700 flex justify-center items-center
+}
+
+.btn {
+  @apply bg-violet-500 hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 active:bg-violet-700 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-white
+  disabled:bg-violet-200 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none disabled:cursor-no-drop
+}
+
+.btnSend {
+  @apply bg-violet-500 hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 active:bg-violet-700 px-5 py-2 leading-5 font-semibold text-white
+  disabled:bg-violet-200 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none disabled:cursor-no-drop
+}
+
+.form-input {
+  @apply block px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 bg-transparent text-white
+  focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+}
